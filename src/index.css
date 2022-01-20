@@ -1,0 +1,137 @@
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{
+  color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Main.js */
+.MainPage, .LoginPage{
+  text-align: center;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+
+.StartButton, .LoginButton{
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.StartButton:active{
+  background-color: white;
+  color: black;
+}
+
+
+/* Login.js */
+.loginInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loginText{
+  width: 200px;
+  height: 20px;
+}
+
+.idText, .pwText{
+  margin: 2px;
+}
+
+.loginButton{
+  width: 208px;
+  height: 25px;
+  margin: 4px;
+  background-color: black;
+  color: white;
+  border-width: 2px;
+}
+
+.loginButton:active{
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
+.loginService{
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px;
+}
+
+
+/* Nav.js */
+.navMenu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+}
+.navMenuImg{
+  margin: 5px;
+}
+
+.createGame, .myPage{
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border : 1px solid white;
+}
+.createGame:active, .myPage:active{
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+.createGame{
+  font-size: 13px;
+}
+.myPage{
+  font-size: 13px;
+}
+.navMenuLine{
+  margin: 0px;
+  border: 2px solid black;
+}
+
+@media screen and (max-width:499px){
+  .navMenu{
+    height: 70px;
+  }
+  .createGame, .myPage{
+    width: 50px;
+    height: 50px;
+    font-size: 11px;
+  }
+  .navMenuImg{
+    width: 60px;
+    height: 60px;
+  }
+  .navMenuLine{
+    border-width: 1px;
+  }
+}
