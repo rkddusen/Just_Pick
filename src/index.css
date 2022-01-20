@@ -76,6 +76,7 @@ code {
   display: flex;
   justify-content: space-around;
   font-size: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -118,7 +119,7 @@ code {
   border: 2px solid black;
 }
 
-@media screen and (max-width:499px){
+@media all and (max-width:499px){
   .navMenu{
     height: 70px;
   }
@@ -134,4 +135,80 @@ code {
   .navMenuLine{
     border-width: 1px;
   }
+}
+
+/* Cont.js */
+.contBox{
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5px solid black;
+}
+.thumbnailName{
+  font-size: 20px;
+  height: 40px;
+  margin-top: 10px;
+  line-height: 40px;
+}
+.thumbnail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background-color: white;
+  
+}
+
+.firstThum, .secondThum{
+  width: 146px;
+  height: 198px;
+  border: 1px solid black;
+}
+
+.contStart{
+  width: 120px;
+  height: 35px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.contStart:active{
+  background-color: white;
+  color: black;
+}
+@media all and (max-width:480px){
+  .contBox{
+    width: 100%;
+    height: 100%;
+    margin: 10px 5px;
+  }
+  .firstThum, .secondThum{
+    width: 170px;
+    height: 200px;
+  }
+  .thumbnailName{
+    font-size: 20px;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+  }
+  .contStart{
+    margin-bottom: 10px;
+  }
+}
+
+/* Game.js */
+.contWrap{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px,auto));
 }
