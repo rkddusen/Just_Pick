@@ -4,11 +4,11 @@ export default function Nav() {
     return (
         <>
             <div className='navMenu'>
-                <button className='createGame'>Plus<br />Game</button>
+                <button className='createGame'>Create<br />Game</button>
                 <a href='/game'>
                     <img src={logo} width='80' height='80' alt='logo' className='navMenuImg' />
                 </a>
-                <button className='myPage'>My<br />Page</button>
+                <button className='deleteGame'>Delete<br />Game</button>
             </div>
             <hr className='navMenuLine' />
         </>

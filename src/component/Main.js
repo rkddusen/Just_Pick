@@ -11,12 +11,12 @@ export default function Main(){
         </div>
         {/* 버튼 누르면 url에 /game추가 */}
         <Link to="/game">
-          <button className='StartButton'>Start!</button>
+          <button className='mainStartButton'>Start!</button>
         </Link>
 
         {/* 버튼 누르면 url에 /login추가 */}
         <Link to="/login">
-          <button className='LoginButton'>Sign in / Sign up</button>
+          <button className='mainLoginButton'>Sign in / Sign up</button>
         </Link>
       </div>
     </div>
