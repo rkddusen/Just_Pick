@@ -8,13 +8,17 @@ body {
 }
 a{
   color: black;
+  text-decoration: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+button{
+  all: unset;
+  cursor: pointer;
+}
 
 /* Main.js */
 .MainPage, .LoginPage{
@@ -25,18 +29,21 @@ code {
 }
 
 
-.StartButton, .LoginButton{
+.mainStartButton, .mainLoginButton{
   width: 120px;
   height: 30px;
   background-color: black;
   color: white;
+  font-size: 12px;
+  border: 1px solid white;
   border-radius: 30px;
   margin: 10px;
 }
 
-.StartButton:active{
+.mainStartButton:active, .mainLoginButton:active{
   background-color: white;
   color: black;
+  border: 1px solid black;
 }
 
 
@@ -58,11 +65,12 @@ code {
 }
 
 .loginButton{
-  width: 208px;
-  height: 25px;
+  width: 206px;
+  height: 23px;
   margin: 4px;
   background-color: black;
   color: white;
+  border: 1px solid black;
   border-width: 2px;
 }
 
@@ -70,6 +78,7 @@ code {
   border-color: black;
   background-color: white;
   color: black;
+  border-color: black;
 }
 
 .loginService{
@@ -77,6 +86,9 @@ code {
   justify-content: space-around;
   font-size: 10px;
   margin-bottom: 20px;
+}
+.loginService a{
+  text-decoration: underline;
 }
 
 
@@ -91,7 +103,7 @@ code {
   margin: 5px;
 }
 
-.createGame, .myPage{
+.createGame, .deleteGame{
   width: 70px;
   height: 70px;
   margin: 10px;
@@ -99,20 +111,20 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  color: black;
-  border : 4px double black;
-  border-radius: 10px;
-}
-.createGame:active, .myPage:active{
   background-color: black;
   color: white;
-  border-color: white;
+  border : 4px double white;
+  border-radius: 10px;
+}
+.createGame:active, .deleteGame:active{
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 .createGame{
   font-size: 13px;
 }
-.myPage{
+.deleteGame{
   font-size: 13px;
 }
 .navMenuLine{
@@ -124,7 +136,7 @@ code {
   .navMenu{
     height: 70px;
   }
-  .createGame, .myPage{
+  .createGame, .deleteGame{
     width: 50px;
     height: 50px;
     font-size: 11px;
@@ -180,8 +192,9 @@ code {
   margin-bottom: 10px;
   background-color: black;
   color: white;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 10px;
+  text-align: center;
 }
 
 .contStart:active{
