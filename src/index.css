@@ -99,14 +99,15 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: white;
-  border : 1px solid white;
-}
-.createGame:active, .myPage:active{
   background-color: white;
   color: black;
-  border-color: black;
+  border : 4px double black;
+  border-radius: 10px;
+}
+.createGame:active, .myPage:active{
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 .createGame{
   font-size: 13px;
@@ -149,7 +150,8 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 5px solid black;
+  border: 5px double black;
+  border-radius: 10px;
 }
 .thumbnailName{
   font-size: 20px;
@@ -211,4 +213,10 @@ code {
 .contWrap{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px,auto));
+}
+@media all and (max-width:480px) {
+  .contWrap{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
